@@ -1,7 +1,7 @@
 languageCode = 'en-in'
-title = 'Core dump Blog'
+title = 'Core dump blog'
 copyright = '© Ananth Bhaskararaman'
-paginate=3
+paginate = 3
 
 [module]
 [[module.imports]]
@@ -10,7 +10,7 @@ paginate=3
 [params]
 	mode='auto' # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = 'I write bits about programming (core dumped).'
+	subtitle = 'Stream of consciousness (core dumped) in UTF-8'
 
 [[menu.main]]
 name = "Home"
