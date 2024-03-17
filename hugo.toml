@@ -5,12 +5,13 @@ paginate = 3
 
 [module]
 [[module.imports]]
-    path = 'github.com/ananthb/jughead'
+path = 'github.com/ananthb/jughead'
 
 [params]
-	mode='auto' # color-mode → light,dark,toggle or auto
-	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = 'Stream of consciousness (core dumped) in UTF-8'
+mode='auto' # color-mode → light,dark,toggle or auto
+useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+subtitle = 'Stream of consciousness (core dumped) in UTF-8'
+attribution = true
 
 [[menu.main]]
 name = "Home"
