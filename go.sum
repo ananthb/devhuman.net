@@ -1,2 +1,10 @@
-github.com/ananthb/jughead v0.0.0-20231114221510-4b789ca0d9fe h1:goslQOckXamsAt8XRjPuyMrn/XenAMIL7Th1tC6PF4E=
-github.com/ananthb/jughead v0.0.0-20231114221510-4b789ca0d9fe/go.mod h1:yYaVmNQL05YnV3bgwl2VRQMpeFz6r67yI3R51AyiqOY=
+github.com/ananthb/jughead v0.0.0-20240317204956-79f28b1d457d h1:83+w8b3Q38UB2VzB9NyaDm9PY9D/5tIVX4uZyhCGbys=
+github.com/ananthb/jughead v0.0.0-20240317204956-79f28b1d457d/go.mod h1:yYaVmNQL05YnV3bgwl2VRQMpeFz6r67yI3R51AyiqOY=
+github.com/ananthb/jughead v1.0.0 h1:bxt1zaBcAprChRxL1TFjh96SFpjnNKGQ8hk2j5YewT0=
+github.com/ananthb/jughead v1.0.0/go.mod h1:yYaVmNQL05YnV3bgwl2VRQMpeFz6r67yI3R51AyiqOY=
+github.com/ananthb/jughead v1.0.1 h1:2hPcEG8cCQ4VpR701j7s+Fa9459Cdh3QkeTB4F9aefE=
+github.com/ananthb/jughead v1.0.1/go.mod h1:yYaVmNQL05YnV3bgwl2VRQMpeFz6r67yI3R51AyiqOY=
+github.com/ananthb/jughead v1.0.2 h1:SJD0MZ5jFY3KLjPdgQTMntULgSBnU3T2y8wqmsClzpo=
+github.com/ananthb/jughead v1.0.2/go.mod h1:1swGYpnHjJcJJJrH4E9ynWyuK5McvWTIn1GUsi60Uq4=
+github.com/ananthb/jughead v1.0.3 h1:WrwMH/J2l4ubu6i+JDXB9zRRPzx1H73ttIvFvxWayMI=
+github.com/ananthb/jughead v1.0.3/go.mod h1:1swGYpnHjJcJJJrH4E9ynWyuK5McvWTIn1GUsi60Uq4=
