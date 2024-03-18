@@ -13,9 +13,8 @@ mode='auto' # color-mode → light,dark,toggle or auto
 useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 subtitle = 'Stream of consciousness (core dumped) in UTF-8'
 attribution = true
-
-[params.utterances]
-repo = 'ananthb/coredump.blog'
+github_repo = 'ananthb/coredump.blog'
+utterances = 'ananthb/coredump.blog'
 
 [[menu.main]]
 name = "Home"
