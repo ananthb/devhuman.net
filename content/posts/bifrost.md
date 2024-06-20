@@ -6,7 +6,7 @@ mermaid = true
 +++
 
 [Bifrost](https://github.com/RealImage/bifrost) is an [mTLS](https://www.cloudflare.com/en-in/learning/access-management/what-is-mutual-tls/)
-authentication system comprised of an HTTP CA server,
+authentication system comprised of an HTTP Certificate Authority (CA) server,
 Go client library, and Go server middleware.
 
 <!--more-->
@@ -64,7 +64,7 @@ A key pair maps strongly to a UUID.
 Systems using Bifrost can identify clients by their UUIDs alone,
 without needing to store or send public keys.
 
-## CA Server
+## Certificate Authority Server
 
 Bifrost CA server is a plain HTTP server that responds to X.509 Certificate
 Signing Requests (CSRs) sent via HTTP POST requests.
@@ -75,8 +75,9 @@ The server is also unauthenticated, meaning that anyone can request a certificat
 
 Operators can secure access to the server in one of two ways.
 
-1. An network-based mechanism like a reverse proxy, secure gateway, or firewall.
-2. Implement a [`tinyca.Gauntlet`](https://pkg.go.dev/github.com/RealImage/bifrost@v1.20.1/tinyca#Gauntlet) and build it into a custom binary.
+1. Network-based mechanisms like reverse proxies, secure gateways, or firewalls.
+2. Implement a [`tinyca.Gauntlet`](https://pkg.go.dev/github.com/RealImage/bifrost@v1.20.1/tinyca#Gauntlet)
+function and build it into a custom binary.
 
 A custom `Gauntlet` function can also customise client certificate fields.
 
@@ -84,7 +85,7 @@ A standard Bifrost certificate contains the client's UUID in the Subject
 Common Name (CN) field, and the Namespace in the Organization (O) field.
 
 The Bifrost CA certificate must also follow this pattern, so the Issuer
-Common Name (CN) field is the UUID of the CA certificate, and the 
+Common Name (CN) field is the UUID of the CA certificate, and the
 Organization (O) field is the UUID again.
 
 ### Typical Bifrost Certificate
