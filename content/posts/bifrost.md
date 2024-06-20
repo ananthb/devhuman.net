@@ -13,7 +13,7 @@ Go client library, and Go server middleware.
 <!--more-->
 
 The idea behind Bifrost is to provide clients a mechanism to create
-unique identites and register with a central authority, without having to
+unique identities and register with a central authority, without having to
 provide sensitive information like passwords or API keys.
 
 Servers store and verify UUIDs to trust clients.
