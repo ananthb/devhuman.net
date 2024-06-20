@@ -12,8 +12,8 @@ Go client library, and Go server middleware.
 <!--more-->
 
 The idea behind Bifrost is to provide clients a mechanism to create
-unique identites and register with a central authority, without entrusting
-them with sensitive information like passwords or API keys.
+unique identites and register with a central authority, without having to
+provide sensitive information like passwords or API keys.
 
 Servers store and verify UUIDs to trust clients.
 Clients communicate to servers over mTLS, ensuring that trusted clients
@@ -67,15 +67,16 @@ without needing to store or send public keys.
 ## Certificate Authority Server
 
 Bifrost CA server is a plain HTTP server that responds to X.509 Certificate
-Signing Requests (CSRs) sent via HTTP POST requests.
+Signing Requests (CSRs) sent via POST requests.
 The server validates CSRs, signs them, and returns signed certificates to clients.
 
 The server is stateless and doesn't store any information about clients.
-The server is also unauthenticated, meaning that anyone can request a certificate
+The server is also unauthenticated, meaning that anyone can request a certificate.
 
-Operators can secure access to the server in one of two ways.
+Operators can secure access to the server in one of two ways:
 
-1. Network-based mechanisms like reverse proxies, secure gateways, or firewalls.
+1. Place it behind a network-based protection mechanism (reverse proxy, secure gateway, firewall); or
+
 2. Implement a [`tinyca.Gauntlet`](https://pkg.go.dev/github.com/RealImage/bifrost@v1.20.1/tinyca#Gauntlet)
 function and build it into a custom binary.
 
