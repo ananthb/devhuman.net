@@ -1,5 +1,5 @@
 languageCode = 'en-in'
-title = 'Core dump blog'
+title = 'Core Dump Blog'
 copyright = '© Ananth Bhaskararaman'
 paginate = 3
 enableGitInfo = true
