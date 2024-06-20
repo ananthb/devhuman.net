@@ -5,8 +5,9 @@ tags = ['mTLS', 'authentication', 'golang', 'security']
 mermaid = true
 +++
 
-[Bifrost](https://github.com/RealImage/bifrost) is an mTLS authentication
-system comprised of an HTTP CA server, Go client library, and Go server middleware.
+[Bifrost](https://github.com/RealImage/bifrost) is an [mTLS](https://www.cloudflare.com/en-in/learning/access-management/what-is-mutual-tls/)
+authentication system comprised of an HTTP CA server,
+Go client library, and Go server middleware.
 
 <!--more-->
 
