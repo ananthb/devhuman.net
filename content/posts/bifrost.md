@@ -158,17 +158,16 @@ certificates from the CA server on demand.
 package main
 
 import (
-    "crypto/ecdsa"
-    "crypto/x509"
-    "encoding/pem"
     "fmt"
+    "io"
     "log"
 
     "github.com/RealImage/bifrost"
+    "github.com/google/uuid"
 )
 
 const (
-    caUrl = "https://bifrost-ca.example.com"
+    caUrl  = "https://bifrost-ca.example.com"
     apiUrl = "https://api.example.com"
 )
 
@@ -184,7 +183,7 @@ func main() {
 
     // bifrost.HTTPClient returns an http.Client which fetches certificates
     // from caUrl on demand.
-    client, err := bifrost.HTTPClient(caUrl, namespace, privKey, nil, nil)
+    client, err := bifrost.HTTPClient(caUrl, namespace, key, nil, nil)
     if err != nil {
         log.Fatal(err)
     }
@@ -195,7 +194,7 @@ func main() {
         log.Fatal(err)
     }
     defer resp.Body.Close()
-    
+
     // Read the response body.
     body, err := io.ReadAll(resp.Body)
     if err != nil {
@@ -204,7 +203,6 @@ func main() {
 
     fmt.Println(string(body))
 }
-
 ```
 
 ### Server Middleware
@@ -228,6 +226,7 @@ import (
     "net/http"
 
     "github.com/RealImage/bifrost/asgard"
+    "github.com/google/uuid"
 )
 
 var namespace = uuid.MustParse("01881c8c-e2e1-4950-9dee-3a9558c6c741")
@@ -245,7 +244,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     auth := asgard.Heimdallr(asgard.HeaderNameClientCertLeaf, namespace)
-    http.HandleFunc("/", auth(handler))
+    http.Handle("/", auth(http.HandlerFunc(handler)))
     http.ListenAndServe(":8080", nil)
 }
 ```
