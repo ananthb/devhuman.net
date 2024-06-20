@@ -2,6 +2,7 @@
 title = 'Bifrost - A no-frills mTLS authentication system'
 date = 2024-06-20T21:39:06+05:30
 tags = ['mTLS', 'authentication', 'golang', 'security']
+tldr = 'Bifrost brings simple mTLS authentication to Go applications.'
 mermaid = true
 +++
 
