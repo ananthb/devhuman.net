@@ -95,10 +95,17 @@ The namespace is any UUID that identifies a domain or application.
 ```go
 // namespace is a UUID
 // pubkey is an ecdsa.PublicKey of curve P-256
+
 var buf [64]byte
 pubkey.X.FillBytes(buf[:32])
 pubkey.Y.FillBytes(buf[32:])
-fmt.Println(uuid.NewSHA1(namespace, buf[:]))
+// buf now contains the bytes of the X and Y coordinates of the public key,
+// one after the other in big-endian order.
+
+// The UUID is the SHA-1 hash of the namespace and the public key bytes.
+id := uuid.NewSHA1(namespace, buf[:])
+
+fmt.Println(id)
 // Output:
 // 6ba7b810-9dad-11d1-80b4-00c04fd430c8  # for example
 ```
