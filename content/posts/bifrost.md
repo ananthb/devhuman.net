@@ -12,13 +12,10 @@ Go client library, and Go server middleware.
 
 <!--more-->
 
-## Wot it be
-
-With the jargon out of the way, we can jump into how Bifrost came to be
-and what it actually is.
+## What is it?
 
 The idea behind Bifrost is to provide clients a mechanism to create
-unique identities and register with a central authority, without having to
+unique identities, and register with a central authority, without having to
 provide sensitive information like passwords or API keys.
 
 Say you have a fleet of servers that you dispatch off to your partners.
@@ -31,7 +28,7 @@ Enter Bifrost.
 
 Application clients generate key pairs and start talking to API servers over mTLS.
 Servers store all the client UUIDs they see.
-The first time your server sees a UUID, that ID is still untrusted, so the client
+The first time your server sees a UUID, that ID is still untrusted- so the client
 doesn't have access to sensitive APIs.
 Along comes a trusted operator who tells your server that UUID xyz belongs to
 partner foo.
@@ -40,11 +37,10 @@ talk to more trusted APIs.
 
 ## You (probably) don't want this
 
-We built Bifrost to fit in a niche and solve a specific problem.
-Here are some reasons for you to not use it:
+We built Bifrost at [Qube Wire](https://qubewire.com) to fit into a
+niche and solve a specific problem.
+Here are some reasons you might not want to use it.
 
-* It works for us folks over at [Qube Wire](https://qubewire.com).
-It might not for you.
 * The [OAuth 2.0 Device Authorization Grant](https://oauth.net/2/device-flow/)
 (OAuth Device Flow) might be more suited to authorise devices and assign
 them to users.
@@ -53,7 +49,7 @@ or [ACME](https://datatracker.ietf.org/doc/html/rfc8555/)
 might suit your PKI needs better. Do your homework!
 * Your friendly neighbourhood cloud provider might have an offering
 that gets your audit department going.
-If you need regulatory compliance, this ain't it chief.
+If you need regulatory compliance, this ain't it!
 
 ## How it works
 
