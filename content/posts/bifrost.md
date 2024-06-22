@@ -46,7 +46,7 @@ Here are some reasons you might not want to use it.
 them to users.
 * [SmallStep CA](https://github.com/smallstep/certificates)
 or [ACME](https://datatracker.ietf.org/doc/html/rfc8555/)
-might suit your PKI needs better. Do your homework!
+might suit your PKI needs better.
 * Your friendly neighbourhood cloud provider might have an offering
 that gets your audit department going.
 If you need regulatory compliance, this ain't it!
