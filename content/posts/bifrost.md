@@ -14,8 +14,8 @@ Go client library, and Go server middleware.
 
 ## Wot it be
 
-With the jargon out of the way, let's take an earnest look at what Bifrost is
-and how it came to be.
+With the jargon out of the way, we can jump into how Bifrost came to be
+and what it actually is.
 
 The idea behind Bifrost is to provide clients a mechanism to create
 unique identities and register with a central authority, without having to
@@ -40,27 +40,26 @@ talk to more trusted APIs.
 
 ## You (probably) don't want this
 
-Here are some reasons for you to not use Bifrost.
-It works for us folks over at [Qube Wire](https://qubewire.com).
-It might not for you.
+We built Bifrost to fit in a niche and solve a specific problem.
+Here are some reasons for you to not use it:
 
-The [OAuth 2.0 Device Authorization Grant](https://oauth.net/2/device-flow/)
+* It works for us folks over at [Qube Wire](https://qubewire.com).
+It might not for you.
+* The [OAuth 2.0 Device Authorization Grant](https://oauth.net/2/device-flow/)
 (OAuth Device Flow) might be more suited to authorise devices and assign
 them to users.
-
-[SmallStep CA](https://github.com/smallstep/certificates)
+* [SmallStep CA](https://github.com/smallstep/certificates)
 or [ACME](https://datatracker.ietf.org/doc/html/rfc8555/)
 might suit your PKI needs better. Do your homework!
-
-Your friendly neighbourhood cloud provider might have an offering
+* Your friendly neighbourhood cloud provider might have an offering
 that gets your audit department going.
-If you need regulatory compliance, we are not it chief.
+If you need regulatory compliance, this ain't it chief.
 
 ## How it works
 
 You're sure you want to use Bifrost?
 You're plain curious? None of my business‽
-Understandable.
+OK.
 Here's how it comes together.
 
 1. Clients generate a key pair and fetch a signed TLS certificate from the CA server.
