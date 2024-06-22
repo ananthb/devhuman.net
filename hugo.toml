@@ -1,3 +1,4 @@
+defaultContentLanguage = 'en'
 languageCode = 'en-in'
 title = 'Core Dump Blog'
 copyright = '© Ananth Bhaskararaman'
