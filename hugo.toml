@@ -22,7 +22,7 @@ utterances = 'ananthb/coredump.blog'
 
 [[params.social]]
 name = 'GitHub'
-icon = "github'
+icon = 'github'
 url = 'https://github.com/ananthb'
 [[params.social]]
 name = 'LinkedIn'
