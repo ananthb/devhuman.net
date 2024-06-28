@@ -21,13 +21,13 @@ github_repo = 'ananthb/coredump.blog'
 utterances = 'ananthb/coredump.blog'
 
 [[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/ananthb"
+name = 'GitHub'
+icon = "github'
+url = 'https://github.com/ananthb'
 [[params.social]]
-name = "LinkedIn"
-icon = "linkedin"
-url = "https://www.linkedin.com/in/ananthb/"
+name = 'LinkedIn'
+icon = 'linkedin'
+url = 'https://www.linkedin.com/in/ananth-bhaskararaman-2b4227316'
 
 [taxonomies]
 tag = 'tags'
