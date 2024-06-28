@@ -20,6 +20,15 @@ attribution = true
 github_repo = 'ananthb/coredump.blog'
 utterances = 'ananthb/coredump.blog'
 
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/ananthb"
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/ananthb/"
+
 [taxonomies]
 tag = 'tags'
 
