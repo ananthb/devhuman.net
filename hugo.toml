@@ -13,8 +13,6 @@ path = 'github.com/ananthb/jughead'
 [params]
 description = """Core Dump Blog by Ananth tells you real hard-hitting stories
 of machines, their dreams, and their human friends."""
-mode='auto'   # color-mode → light,dark,toggle or auto
-useCDN=false  # don't use CDNs for fonts and icons, instead serve them locally.
 subtitle = 'Tales from the machine'
 attribution = true
 github_repo = 'ananthb/coredump.blog'
