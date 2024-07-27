@@ -1,6 +1,6 @@
 defaultContentLanguage = 'en'
 languageCode = 'en-in'
-title = 'Core Dump Blog'
+title = '(core dumped)'
 copyright = '© Ananth Bhaskararaman'
 paginate = 3
 enableGitInfo = true
