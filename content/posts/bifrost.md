@@ -1,5 +1,5 @@
 +++
-title = 'Bifrost - A no-frills mTLS authentication system'
+title = 'Bifrost - A minimal mTLS system'
 date = 2024-06-20T21:39:06+05:30
 tags = ['mTLS', 'authentication', 'golang']
 tldr = 'Bifrost brings simple mTLS authentication to Go applications.'
