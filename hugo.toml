@@ -2,9 +2,11 @@ defaultContentLanguage = 'en'
 languageCode = 'en-in'
 title = 'coredump'
 copyright = '© Ananth Bhaskararaman'
-paginate = 3
 enableGitInfo = true
 enableRobotsTXT = true
+
+[pagination]
+pagerSize = 3
 
 [module]
 [[module.imports]]
