@@ -13,9 +13,9 @@ pagerSize = 3
 path = 'github.com/ananthb/jughead'
 
 [params]
-description = """Core Dump Blog by Ananth tells you real hard-hitting stories
-of machines, their dreams, and their human friends."""
-subtitle = 'Tales from the machine'
+description = """Ananth blogs about computers, distributed systemd, programming languages,
+and other things that interest him."""
+subtitle = 'Ananth blogs about computers'
 attribution = true
 github_repo = 'ananthb/coredump.blog'
 utterances = 'ananthb/coredump.blog'
