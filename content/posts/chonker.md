@@ -1,16 +1,22 @@
 +++
-title = 'Chonker'
+title = 'Chonker - Fast S3 file downloads'
 date = 2024-03-17T03:22:32+05:30
 tags = ['go', 's3', 'http']
 tldr = 'Chonker makes S3 file downloads fast using HTTP range requests.'
 +++
 
-The simple idea behind Chonker is to speed up large file downloads from S3
-by fetching the file in chunks using HTTP range requests.
+Chonker speeds up large file downloads from S3
+by fetching files in chunks using HTTP range requests.
 
 <!--more-->
 
 ## wot it be
+
+DDOS-ing your upstream file server is generally not a good idea.
+AWS S3's horizontal scaling design essentially mandates that you
+use parallel network requests to fully saturate available bandwidth.
+To that end, the AWS CLI itself makes ten parallel requests to S3 out of the box.
+Chonker brings that same experience to your Go programs.
 
 [Chonker](https://github.com/ananthb/chonker) is a rewrite
 of a now non-existent project called ranger written by the venerable
@@ -26,7 +32,7 @@ chonker is fetching chunks and piping them to the `io.Reader` in order.
 ## vroooom
 
 Go made creating Chonker an absolute delight.
-An `io.Reader` ir connected to an `io.Writer` interface
+An `io.Reader` is connected to an `io.Writer` interface
 by an `io.Pipe`. Chunk download goroutines fetch chunks
 quickly and potentially out-of-order.
 Writes to the pipe happen in-order ensuring that clients
