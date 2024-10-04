@@ -1,6 +1,6 @@
 +++
-title = 'Elm makes me unreasonably happy'
-date = 2024-10-04T02:24:35+05:30
+title = 'Elm makes _me_ unreasonably happy'
+date = 2024-09-04T02:24:35+05:30
 tags = ['elm', 'webdev']
 tldr = 'Write something in Elm, I implore you.'
 +++
@@ -16,14 +16,12 @@ Elm is a well thought out language and ecosystem.
 The tooling is straightforward and unfailing.
 Their documentation game is on point.
 The Elm Architecture is a complete game-changer for building reactive
-web applications. Trouble believing me?; ask React and Redux how it's done.
+web applications. Trouble believing me?; ask React and Redux how it's going.
 
 Having no background in Functional Programming during my learning days,
 Haskell enchanted me with its strange symbol-like code.
-I was unable to get anywhere with it but my breakthrough came from Elm.
-It's FP on easy mode. The starting tutorial guides you through a range of topics
-such as program structure, serialisation, and interacting with the wider
-non-Elm world.
+I was unable to get anywhere with it but though.
+Ny breakthrough came from learning Elm.
 
 ## Elm is for debuggability
 
@@ -66,16 +64,35 @@ What I came to love about FP is how your code ends up reading like
 the solution to a problem rather than a series of steps to get there.
 It brings great joy to use `|>` and `>>` to compose function and data pipelines.
 
-## Elm might be dead
+### FP Easy Mode
+
+It's FP on easy mode. The starting tutorial guides you through a range of topics
+such as program structure, serialisation, and interacting with the wider
+non-Elm world.
+
+This has the tendency to rub people the wrong way.
+Seasoned Haskell developers like Sandy Maguire have spoken about
+[Elm being wrong](https://reasonablypolymorphic.com/blog/elm-is-wrong/).
+While I sympathise with the arguments put forward, and appreciate
+the simple distilling of their contentions, I put forth that
+Elm isn't for them.
+
+Bryan Cantrill's talk on
+[Platform as a reflection of values](https://www.youtube.com/watch?v=Xhx970_JKX4)
+illustrates the point that we should choose platforms that reflect our values.
+More importantly, he asks us to pay attention to the values that platforms
+hold dear to themselves. The Elm platform values simplicity and approachability
+more than type system expressiveness.
+
+## Elm is dead
 
 Elm has been on version 1.19.1 for a while now.
 Stability is (was?) valued highly in the Elm community so this by itself
 isn't cause for alarm.
 Besides one typing soundness bug in 0.19, Elm doesn't have a lot of issues.
-You can read plenty of criticism of Elm's typesystem on the internet.
-Season Haskell developers are unhappy with the lack of typeclasses.
-But Elm isn't a Haskell replacement, it's a JavaScript replacement,
-and in that lens it does an excellent job.
+It could learn new features for sure, but you can still
+build applications that delight you. I built a web UI for
+my mTLS project [Bifrost]({{< ref "bifrost.md" >}}) in Elm this year.
 
 The real reason Elm is probably dead is that its not profitable to
 create and run Elm. Running programming platforms is as thankless and
@@ -84,3 +101,7 @@ Evan spoke about his struggles monetising Elm this year:
 <https://www.youtube.com/watch?v=XZ3w_jec1v8>.
 You may watch it if you will, but its a sad story
 with little solace at the end.
+
+So don't start a work project with Elm, but if you've
+never done any functional programming before or if you're on the
+fence, give it a shot! What's the worst that could happen?
