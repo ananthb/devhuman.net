@@ -1,6 +1,6 @@
 defaultContentLanguage = 'en'
 languageCode = 'en-in'
-title = 'coredump'
+title = '/dev/human'
 copyright = '© Ananth Bhaskararaman'
 enableGitInfo = true
 enableRobotsTXT = true
@@ -12,10 +12,10 @@ path = 'github.com/ananthb/jughead'
 [params]
 description = """Ananth blogs about computers, distributed systemd, programming languages,
 and other things that interest him."""
-subtitle = 'Ananth blogs about computers'
+subtitle = 'crw-rw-rw- 1 ananth ananth 5, 0 May  19 22:33 /dev/human'
 attribution = true
-github_repo = 'ananthb/coredump.blog'
-utterances = 'ananthb/coredump.blog'
+github_repo = 'ananthb/devhuman.net'
+utterances = 'ananthb/devhuman.net'
 
 [[params.social]]
 name = 'GitHub'

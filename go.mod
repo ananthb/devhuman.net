@@ -1,4 +1,4 @@
-module github.com/ananthb/coredump.blog
+module github.com/ananthb/devhuman.net
 
 go 1.23.1
 
