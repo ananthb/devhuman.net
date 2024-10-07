@@ -30,11 +30,16 @@ url = 'https://www.linkedin.com/in/ananth-bhaskararaman-2b4227316'
 tag = 'tags'
 
 [[menu.main]]
+name = "Resume"
+url = "/resume"
+weight = 1
+
+[[menu.main]]
 name = "Posts"
 url = "/posts"
-weight = 1
+weight = 2
 
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 2
+weight = 3
