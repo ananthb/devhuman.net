@@ -19,7 +19,7 @@ Write me at <antsub@gmail.com>.
 Have worked with Linux/OS features like cgroups and namespaces,
 hypervisors, perf, block devices, and UEFI.
 In-depth understanding of Systemd, Linux networking, and filesystems.
-Currently playing with eBPF, bcachefs, libostree, and
+Hacking on eBPF, bcachefs, libostree, and
 my (unreleased) immutable OS.
 I’m also an Arch Linux tester and occasional AUR package maintainer.
 
@@ -27,21 +27,21 @@ I’m also an Arch Linux tester and occasional AUR package maintainer.
 
 I’ve worked extensively with Podman and Docker and have contributed to
 Podman and associated OCI tools.
-Have deployed and maintained Kubernetes clusters of a few thousand nodes.
+Have deployed and maintained Kubernetes clusters of thousands of nodes.
 Also have worked with gVisor, Firecracker, libvirt, and lxc/lxd.
 
 ### **Go** - *5 years of experience*
 
 Have used Go for backend, system components, CLIs, and as component glue.
 Have contributed systemd-userdb support upstream to the Go compiler project.
-I maintain a few open-source Go libraries and help maintain a few projects
+I maintain open-source Go libraries and help maintain projects
 that I use at home.
 
 ### **Python** - *10 years of experience*
 
-Started off with python for web development and everything else in between.
+Started off with python for web development and everything else.
 I’ve used Django, SQLAlchemy, FastAPI, uWSGI, Tornado, Twisted,
-and Waitress regularly.
+and Waitress.
 Have organised Python & LUG meetups in Chennai.
 Taught Python at Summer Robotics workshops in 2018 and 2019, also in Chennai.
 
@@ -53,14 +53,14 @@ I’m comfortable with data modelling, SQL JOINs, CTEs, and query analyses.
 Have also worked on AWS DynamoDB, Cassandra & SycllaDB, and Google Bigtable.
 
 I am also comfortable with BASH, Fish, Java, Ruby, Javascript, Typescript,
-& Elm. Currently exploring Haskell, Rust, and Zig.
+& Elm. Exploring Haskell, Rust, and Zig.
 I’m also a hobby microcontroller programmer, familiar with ESP8266/ESP32/Arduino,
 LoRa, and SDRs.
-You can find me hacking on my numerous ESP32 wearables in my spare time.
+You can find me hacking on ESP32/RPi Pico wearables in my spare time.
 
 ## EXPERIENCE
 
-### **Qube Cinema Technologies Pvt. Ltd., Chennai** *— Engineering Lead
+### **Qube Cinema Technologies Pvt. Ltd., Chennai** — *Staff Engineer*
 
 #### APR 2024 - NOW - *Staff Engineer*
 
@@ -85,7 +85,7 @@ You can find me hacking on my numerous ESP32 wearables in my spare time.
 #### JUL 2018 - DEC 2019
 
 * Hosted and ran learning presentations for emerging technology.
-* Worked on multiple large codebases in Java and ASP.NET.
+* Worked on large codebases in Java and ASP.NET.
 * Worked on Android mobile applications written in Angular and Cordova.
 * Led the initiative to update multi-platform product installers, org-wide.
 
